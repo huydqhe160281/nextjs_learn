@@ -49,6 +49,7 @@ export default function Form({ customers }: { customers: CustomerField[] }) {
                 id="amount"
                 name="amount"
                 type="number"
+                required
                 step="0.01"
                 placeholder="Enter USD amount"
                 className="peer block w-full rounded-md border border-gray-200 py-2 pl-10 text-sm outline-2 placeholder:text-gray-500"
@@ -68,6 +69,7 @@ export default function Form({ customers }: { customers: CustomerField[] }) {
               <div className="flex items-center">
                 <input
                   id="pending"
+                  required
                   name="status"
                   type="radio"
                   value="pending"
@@ -85,6 +87,7 @@ export default function Form({ customers }: { customers: CustomerField[] }) {
                   id="paid"
                   name="status"
                   type="radio"
+                  required
                   value="paid"
                   className="h-4 w-4 cursor-pointer border-gray-300 bg-gray-100 text-gray-600 focus:ring-2"
                 />
